@@ -14,7 +14,7 @@ from snorkel.classification.data import DictDataset, DictDataLoader
 
 
 def load_spam_dataset(load_train_labels: bool = False, split_dev_valid: bool = False):
-    if os.path.basename(os.getcwd()) == "snorkel-tutorials":
+    if os.path.basename(os.getcwd()) == "snorkeltutorials":
         os.chdir("spam")
     try:
         subprocess.run(["bash", "download_data.sh"], check=True, stderr=subprocess.PIPE)
